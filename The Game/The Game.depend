@@ -1,0 +1,139 @@
+# depslib dependency file v1.0
+1747832844 source:d:\the game\the game\main.cpp
+	"Game.h"
+
+1747558770 source:d:\the game\the game\renderwindow.cpp
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	"RenderWindow.h"
+
+1747595721 d:\the game\the game\include\renderwindow.h
+	<SDL.h>
+	<SDL_image.h>
+	"Entity.h"
+
+1747592553 source:d:\the game\the game\src\entity.cpp
+	"Entity.h"
+
+1747590862 source:d:\the game\the game\src\renderwindow.cpp
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	"RenderWindow.h"
+
+1747592529 d:\the game\the game\include\entity.h
+	<SDL.h>
+	<SDL_image.h>
+
+1747595717 d:\the game\the game\include\game.h
+	<string>
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	"RenderWindow.h"
+	"Entity.h"
+
+1747833862 source:d:\the game\the game\src\core\game.cpp
+	"core/Game.h"
+	"core/Texture.h"
+	"core/Map.h"
+	"core/Vector2D.h"
+	"core/Collision.h"
+	"gameObject/Components.h"
+
+1747625687 source:d:\the game\the game\src\core\entity.cpp
+	"Entity.h"
+
+1747626317 source:d:\the game\the game\src\core\renderwindow.cpp
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	"RenderWindow.h"
+
+1747639309 source:d:\the game\the game\src\core\texture.cpp
+	"Texture.h"
+	"core/Game.h"
+
+1747639309 d:\the game\the game\include\gameobject\gameobject.h
+	"Game.h"
+
+1747818837 source:d:\the game\the game\src\gameobject\gameobject.cpp
+	"gameObject/gameObject.h"
+	"core/Texture.h"
+
+1747639309 d:\the game\the game\include\core\texture.h
+	"Game.h"
+
+1747832154 d:\the game\the game\include\core\game.h
+	<string>
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	<vector>
+
+1747819609 d:\the game\the game\include\core\map.h
+	"core/Game.h"
+
+1747820100 source:d:\the game\the game\src\core\map.cpp
+	"core/Map.h"
+	"core/Texture.h"
+
+1747652058 source:d:\the game\the game\src\gameobject\ecs.cpp
+
+1747840406 d:\the game\the game\include\gameobject\ecs.h
+	<iostream>
+	<vector>
+	<memory>
+	<algorithm>
+	<bitset>
+	<array>
+
+1747832154 d:\the game\the game\include\gameobject\components.h
+	"gameObject/ECS.h"
+	"gameObject/TransformComponent.h"
+	"gameObject/SpriteComponent.h"
+	"gameObject/KeyboardControl.h"
+	"gameObject/CollisionComponent.h"
+
+1747676551 d:\the game\the game\include\gameobject\positioncomponent.h
+	"gameObject/Components.h"
+
+1747827716 d:\the game\the game\include\gameobject\spritecomponent.h
+	"gameObject/Components.h"
+	"core/Texture.h"
+	<SDL.h>
+
+1747830863 source:d:\the game\the game\src\core\vector2d.cpp
+	"core/Vector2D.h"
+
+1747824594 d:\the game\the game\include\core\vector2d.h
+	<iostream>
+
+1747830788 d:\the game\the game\include\gameobject\transformcomponent.h
+	"gameObject/Components.h"
+	"core/Vector2D.h"
+
+1747833512 d:\the game\the game\include\gameobject\keyboardcontrol.h
+	"core/Game.h"
+	"gameObject/ECS.h"
+	"gameObject/Components.h"
+
+1747833849 source:d:\the game\the game\src\core\collision.cpp
+	"core/Collision.h"
+	"gameObject/CollisionComponent.h"
+
+1747832154 d:\the game\the game\include\core\collision.h
+	<SDL.h>
+
+1747832161 d:\the game\the game\include\gameobject\collisioncomponent.h
+	<string>
+	<SDL.h>
+	"gameObject/Components.h"
+
+1747830546 d:\the game\the game\include\gameobject\tilecomponent.h
+	"gameObject/Ecs.h"
+	"gameObject/TransformComponent.h"
+	"gameObject/SpriteComponent.h"
+	<SDL.h>
+
