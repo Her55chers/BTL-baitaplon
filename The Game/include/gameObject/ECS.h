@@ -171,4 +171,17 @@ public:
         return *e;
     }
 
+    void clearAllEntities()
+    {
+        // Xóa tất cả entities khỏi groups
+        for(auto i = 0u; i < maxGroups; i++)
+        {
+            auto& v(groupedEntities[i]);
+            v.clear();
+        }
+        
+        // Xóa tất cả entities
+        entities.clear();
+    }
+
 };

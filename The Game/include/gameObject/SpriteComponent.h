@@ -9,11 +9,17 @@ class SpriteComponent: public Component
 private:
     TransformComponent* transform;
     SDL_Texture* texture;
-    SDL_Rect src, dst;
+    SDL_Rect srcRect, destRect;
+    bool stretchToFit;
 
 public:
     SpriteComponent() = default;
-    SpriteComponent(const char* path)
+    SpriteComponent(const char* path) : stretchToFit(false)
+    {
+        setTex(path);
+    }
+
+    SpriteComponent(const char* path, bool stretch) : stretchToFit(stretch)
     {
         setTex(path);
     }
@@ -32,29 +38,27 @@ public:
     {
         transform = &entity->getComponent<TransformComponent>();
 
-        // Khởi tạo source rectangle cho sprite
-        src.x = 0;
-        src.y = 0;
-        src.w = transform->width;
-        src.h = transform->height;
-
-        // Khởi tạo destination rectangle
-        dst.x = static_cast<int>(transform->position.x);
-        dst.y = static_cast<int>(transform->position.y);
-        dst.w = transform->width * transform->scale;
-        dst.h = transform->height * transform->scale;
+        srcRect.x = srcRect.y = 0;
+        SDL_QueryTexture(texture, NULL, NULL, &srcRect.w, &srcRect.h);
+        
+        if (!stretchToFit) {
+            destRect.w = transform->width * transform->scale;
+            destRect.h = transform->height * transform->scale;
+        } else {
+            // Nếu stretch, sử dụng kích thước từ TransformComponent trực tiếp
+            destRect.w = transform->width;
+            destRect.h = transform->height;
+        }
     }
 
     void update() override
     {
-        dst.x = static_cast<int>(transform->position.x);
-        dst.y = static_cast<int>(transform->position.y);
-        dst.w = transform->width * transform->scale;
-        dst.h = transform->height * transform->scale;
+        destRect.x = static_cast<int>(transform->position.x);
+        destRect.y = static_cast<int>(transform->position.y);
     }
 
     void draw() override
     {
-        Texture::Draw(texture, src, dst);
+        Texture::Draw(texture, srcRect, destRect);
     }
 };

@@ -140,14 +140,14 @@
 1747924269 source:d:\the game\btl-baitaplon\the game\main.cpp
 	"Game.h"
 
-1747820100 source:d:\the game\btl-baitaplon\the game\src\core\map.cpp
+1747934141 source:d:\the game\btl-baitaplon\the game\src\core\map.cpp
 	"core/Map.h"
 	"core/Texture.h"
 
 1747819609 d:\the game\btl-baitaplon\the game\include\core\map.h
 	"core/Game.h"
 
-1747929477 d:\the game\btl-baitaplon\the game\include\core\game.h
+1747941187 d:\the game\btl-baitaplon\the game\include\core\game.h
 	<string>
 	<iostream>
 	<SDL.h>
@@ -179,7 +179,7 @@
 	<iostream>
 	<cmath>
 
-1747843013 source:d:\the game\btl-baitaplon\the game\src\core\collision.cpp
+1747930197 source:d:\the game\btl-baitaplon\the game\src\core\collision.cpp
 	"core/Collision.h"
 	"gameObject/CollisionComponent.h"
 
@@ -191,7 +191,7 @@
 	<SDL.h>
 	"gameObject/Components.h"
 
-1747929704 d:\the game\btl-baitaplon\the game\include\gameobject\components.h
+1747939654 d:\the game\btl-baitaplon\the game\include\gameobject\components.h
 	"gameObject/ECS.h"
 	"gameObject/TransformComponent.h"
 	"gameObject/SpriteComponent.h"
@@ -200,8 +200,9 @@
 	"gameObject/KeyboardControl.h"
 	"gameObject/HealthComponent.h"
 	"gameObject/EnemyMovementComponent.h"
+	"gameObject/DroneMovementComponent.h"
 
-1747846676 d:\the game\btl-baitaplon\the game\include\gameobject\ecs.h
+1747940254 d:\the game\btl-baitaplon\the game\include\gameobject\ecs.h
 	<iostream>
 	<vector>
 	<memory>
@@ -213,7 +214,7 @@
 	"gameObject/Components.h"
 	"core/Vector2D.h"
 
-1747927443 d:\the game\btl-baitaplon\the game\include\gameobject\spritecomponent.h
+1747940816 d:\the game\btl-baitaplon\the game\include\gameobject\spritecomponent.h
 	"gameObject/Components.h"
 	"core/Texture.h"
 	<SDL.h>
@@ -229,14 +230,13 @@
 1747845880 source:d:\the game\btl-baitaplon\the game\src\gameobject\ecs.cpp
 	"ECS.h"
 
-1747927103 source:d:\the game\btl-baitaplon\the game\src\core\game.cpp
+1747939681 source:d:\the game\btl-baitaplon\the game\src\core\game.cpp
 	"core/Game.h"
 	"core/Texture.h"
 	"core/Map.h"
 	"core/Vector2D.h"
 	"core/Collision.h"
 	"gameObject/Components.h"
-	"gameObject/ProjectileComponent.h"
 
 1747921875 d:\the game\btl-baitaplon\the game\include\gameobject\assetsmanager.h
 	<string>
@@ -258,8 +258,16 @@
 	"gameObject/Components.h"
 	<iostream>
 
-1747928679 d:\the game\btl-baitaplon\the game\include\gameobject\enemymovementcomponent.h
+1747938458 d:\the game\btl-baitaplon\the game\include\gameobject\enemymovementcomponent.h
 	"gameObject/Components.h"
 	"gameObject/TransformComponent.h"
+	"core/Vector2D.h"
 	<iostream>
+
+1747939472 d:\the game\btl-baitaplon\the game\include\gameobject\dronemovementcomponent.h
+	"gameObject/Components.h"
+	"gameObject/TransformComponent.h"
+	"core/Vector2D.h"
+	<iostream>
+	<cmath>
 

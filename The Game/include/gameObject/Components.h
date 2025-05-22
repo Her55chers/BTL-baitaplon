@@ -8,4 +8,5 @@
 #include "gameObject/KeyboardControl.h"
 #include "gameObject/HealthComponent.h"
 #include "gameObject/EnemyMovementComponent.h"
+#include "gameObject/DroneMovementComponent.h"
 //#include "gameObject/TileComponent.h"
