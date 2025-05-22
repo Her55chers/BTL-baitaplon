@@ -11,7 +11,7 @@ public:
     Vector2D position;
     Vector2D velocity;
 
-    int speed =  1;
+    int speed = 4;
 
     int width = 40;
     int height = 40;

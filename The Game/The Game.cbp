@@ -74,6 +74,7 @@
 		<Unit filename="src/core/Map.cpp" />
 		<Unit filename="src/core/Texture.cpp" />
 		<Unit filename="src/core/Vector2D.cpp" />
+		<Unit filename="src/gameObject/ECS.cpp" />
 		<Unit filename="src/gameObject/gameObject.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

@@ -2,13 +2,17 @@
 
 #include "core/Game.h"
 #include "gameObject/ECS.h"
-#include "gameObject/Components.h"
+#include "gameObject/TransformComponent.h"
+#include "gameObject/SpriteComponent.h"
+#include "gameObject/ProjectileComponent.h"
+#include "gameObject/CollisionComponent.h"
+
+extern Manager manager;
 
 class Keyboard : public Component
 {
 public:
     TransformComponent* transform;
-
     const Uint8* keystates = SDL_GetKeyboardState(NULL);
 
     void init() override
@@ -76,7 +80,7 @@ public:
         {
             transform->velocity.y = 1;
         }
-        if (keystates[SDL_SCANCODE_D] && transform->position.x <= 1300)
+        if (keystates[SDL_SCANCODE_D] && transform->position.x <= 1220)
         {
             transform->velocity.x = 1;
         }

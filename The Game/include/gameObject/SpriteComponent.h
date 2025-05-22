@@ -32,11 +32,17 @@ public:
     {
         transform = &entity->getComponent<TransformComponent>();
 
-        src.x = src.y;
+        // Khởi tạo source rectangle cho sprite
+        src.x = 0;
+        src.y = 0;
         src.w = transform->width;
         src.h = transform->height;
 
-        dst.w = dst.h = 40;
+        // Khởi tạo destination rectangle
+        dst.x = static_cast<int>(transform->position.x);
+        dst.y = static_cast<int>(transform->position.y);
+        dst.w = transform->width * transform->scale;
+        dst.h = transform->height * transform->scale;
     }
 
     void update() override
